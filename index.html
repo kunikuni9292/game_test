@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling Ball Game</title>
+  <script type="module" crossorigin src="./assets/index-Nn9AKpgf.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three-Bq1i43Be.js">
+  <link rel="modulepreload" crossorigin href="./assets/cannon-BGes9X4Z.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-Bpfoi7k-.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="ui">
+            <div id="score">スコア: 0</div>
+            <div id="level">レベル: 1</div>
+            <div id="instructions">
+                <p>マウスでボールを操作してゴールを目指そう！</p>
+                <p>WASDキーまたは矢印キーでも操作可能</p>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="gameOver" class="hidden">
+            <h2>ゲームオーバー</h2>
+            <p>最終スコア: <span id="finalScore">0</span></p>
+            <button id="restartBtn">もう一度プレイ</button>
+        </div>
+    </div>
+    
+</body>
+</html>
